@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layouts</title>
+    <style>
+        .row-spacing {
+            margin-bottom: 30px; /* Adjust the value as needed for vertical spacing */
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .card {
+            background-color: rgba(51, 51, 51, 0.8);
+            backdrop-filter: blur(5px);
+            transition: transform .2s;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+
+        .card-img-top {
+            opacity: 0.6;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        /* Additional style for wide cards */
+        .wide-card {
+            margin-bottom: 20px; /* Space between wide cards */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- First Row of Vertical Cards -->
+        <div class="row row-spacing">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/icons8-javascript-64.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Javascript</h5>
+                        <p class="card-text">JavaScript is a versatile programming language primarily used for web development to add interactivity and dynamic behavior to websites.</p>
+                        <a href="/Home/Privacy" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/icons8-php-64.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <p class="card-text">PHP is a server-side scripting language commonly used for web development to create dynamic web pages and applications.</p>
+                        <a href="/Home/Privacy" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/icons8-react-a-javascript-library-for-building-user-interfaces-24.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">React</h5>
+                        <p class="card-text">React is a JavaScript library for building user interfaces, known for its component-based architecture and efficient rendering.</p>
+                        <a href="/Home/Privacy" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Vertical Cards -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/icons8-c-48.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">ASP.NET</h5>
+                        <p class="card-text">ASP.NET is a web application framework developed by Microsoft, allowing developers to build dynamic websites and web services using .NET languages like C#.</p>
+                        <a href="/Home/Privacy" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/icons8-python-48.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Python is a high-level, versatile programming language known for its simplicity and readability. It's widely used in web development, data analysis, artificial intelligence, and more.</p>
+                        <a href="/Home/Privacy" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/icons8-flutter-48.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Flutter</h5>
+                        <p class="card-text">Flutter is a UI toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase, using Dart language.</p>
+                        <a href="/Home/Privacy" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Wide Cards Section -->
+        <div class="row">
+            <div class="col-md-12 wide-card">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/brain.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">QUIZ TIME</h5>
+                        <p class="card-text">Quizzes enhance learning retention, offering a dynamic way to review and reinforce knowledge efficiently..</p>
+                        <a href="/Home/Quiz" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 wide-card">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/job-interview.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Lets Crack Interview</h5>
+                        <p class="card-text">Interviews provide a unique opportunity to demonstrate skills, knowledge, and personality, making a lasting impression on potential employers and advancing professional goals.</p>
+                        <a href="/Home/Courses" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 wide-card">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/safety.png" alt="Card image cap" style="width:100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Details</h5>
+                        <p class="card-text">Safeguarding personal data is crucial, ensuring privacy and security by adhering to ethical and legal standards..</p>
+                        <a href="/Identity/Account/Manage" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
